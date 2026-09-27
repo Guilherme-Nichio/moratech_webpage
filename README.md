@@ -1,6 +1,6 @@
 # Moratech Informática
 
-O código do site está na pasta [`site`](site/). Ela contém os arquivos de origem, as imagens e o resultado estático em `dist/`.
+O projeto atual está na pasta [`site`](site/). Ela contém os arquivos de origem, as imagens e o resultado estático em `dist/`. As antigas cópias de entrega e imagens de prévia foram mantidas apenas no computador local.
 
 ## Publicar na Vercel
 
