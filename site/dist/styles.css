@@ -61,3 +61,16 @@ body[data-page="datacaixa-pdv"] .detail-art{background:#f3e5f5}
   .brand,.nav-actions{flex-shrink:0}
   .site-header nav{top:calc(100% + 8px);left:0;right:0}
 }
+
+/* A fixed panel height must not impose a wider grid column on small screens. */
+@media (max-width:760px){
+  .showcase-grid,.showcase-grid.reverse{grid-template-columns:minmax(0,1fr)}
+  .showcase-grid>.visual-panel{width:100%;min-width:0;aspect-ratio:auto}
+  .detail-hero-grid,body[data-page] .detail-hero-grid{grid-template-columns:minmax(0,1fr)}
+  .detail-hero-grid>*{min-width:0}
+  .detail-hero h1{font-size:clamp(2.25rem,10vw,5.5rem);overflow-wrap:break-word}
+  .detail-hero .actions .button{max-width:100%;min-width:0;gap:12px;text-align:center}
+}
+
+/* Contain the decorative glow inside the hero instead of the page viewport. */
+.hero{position:relative}
