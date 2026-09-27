@@ -48,3 +48,16 @@ body[data-page="datacaixa-pdv"] .detail-art{background:#f3e5f5}
 .visit-panel{background:#130f17}
 .visit-panel>img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
 .visit-panel .panel-tag{color:#fff;background:rgba(22,14,26,.76);padding:9px 12px;border-radius:100px;backdrop-filter:blur(10px)}
+
+/* Keep the mobile navigation anchored to the visible viewport, including safe areas. */
+@media (max-width:900px){
+  .site-header{
+    top:calc(10px + env(safe-area-inset-top, 0px));
+    left:max(10px, env(safe-area-inset-left, 0px));
+    right:max(10px, env(safe-area-inset-right, 0px));
+    width:auto;
+  }
+  .nav-shell{width:100%;max-width:none;min-width:0;margin:0;gap:8px}
+  .brand,.nav-actions{flex-shrink:0}
+  .site-header nav{top:calc(100% + 8px);left:0;right:0}
+}
