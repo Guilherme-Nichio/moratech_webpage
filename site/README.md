@@ -14,7 +14,7 @@ Este site fica na pasta `site` do repositório do GitHub. Na Vercel, defina **Ro
 
 ## Imagens
 
-`dist/assets/fachada-mora.png` é a foto da fachada fornecida pelo usuário. As imagens abaixo foram geradas para este projeto:
+`dist/assets/fachada-mora.png` é a foto da fachada fornecida pelo usuário. `dist/assets/moratech-logo.png` é a logo enviada pelo usuário, usada na navegação e no rodapé. As imagens abaixo foram geradas para este projeto:
 
 - `hero-tech.png`: notebook, câmera e switch sobre fundo escuro com luz roxa.
 - `security-camera.png`: câmera branca de segurança sobre fundo claro.
@@ -22,6 +22,8 @@ Este site fica na pasta `site` do repositório do GitHub. Na Vercel, defina **Ro
 - `computer-upgrade.png`: técnico instalando SSD em PC aberto sob iluminação roxa.
 - `upgrade-components.png`: memórias RAM e SSD preparados para um upgrade.
 - `notebook-repair.png`: técnico reparando notebook aberto em bancada sob iluminação roxa.
+- `equipment-workspace.png`: estação de trabalho com computador, notebook e periféricos.
+- `commercial-automation.png`: balcão comercial com PDV, impressora térmica e periféricos.
 
 São ilustrativas; não representam estoque ou instalações reais da Moratech.
 
@@ -34,4 +36,4 @@ São ilustrativas; não representam estoque ou instalações reais da Moratech.
 - Recursos gerais do parceiro Datacaixa: https://www.datacaixa.com.br/
 - Referência sobre certificados digitais: https://www.gov.br/iti/pt-br/acesso-a-informacao/perguntas-frequentes/certificacao-digital
 
-Horários são consultados pelo perfil do Google. O número de WhatsApp foi confirmado pelo usuário nesta revisão; a recepção das mensagens não foi testada. O nome tipográfico do site é uma proposta visual, não um logotipo oficial fornecido pela empresa.
+Horários são consultados pelo perfil do Google. O número de WhatsApp foi confirmado pelo usuário nesta revisão; a recepção das mensagens não foi testada.

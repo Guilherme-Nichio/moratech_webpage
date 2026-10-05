@@ -48,6 +48,8 @@ const image = (name, cls='', priority=false) => {
     computer:['computer-upgrade.png','Técnico instalando SSD em um computador de mesa, imagem ilustrativa',1536,1024],
     upgrade:['upgrade-components.png','Memórias RAM e SSD para upgrade de computadores, imagem ilustrativa',1536,1024],
     notebook:['notebook-repair.png','Técnico realizando manutenção em um notebook, imagem ilustrativa',1536,1024],
+    equipment:['equipment-workspace.png','Estação de trabalho com computador, notebook e periféricos, imagem ilustrativa',1536,1024],
+    automation:['commercial-automation.png','Balcão comercial com terminal PDV, impressora térmica e periféricos, imagem ilustrativa',1672,941],
     datacaixa:['datacaixa-pdv.jpg','Exemplo de tela do sistema Datacaixa PDV divulgado pelo fornecedor',1200,1200],
     datacaixaGestao:['datacaixa-gestao.jpg','Exemplo de tela gerencial do Datacaixa divulgado pelo fornecedor',1200,1200],
     store:['fachada-mora.png','Fachada real da Moratech Informática em Indaiatuba',382,510]
@@ -55,7 +57,7 @@ const image = (name, cls='', priority=false) => {
   const [file,alt,width,height]=images[name];
   return `<img class="${cls}" src="/assets/${file}" alt="${alt}" width="${width}" height="${height}" ${priority?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 };
-const brand = () => `<a class="brand" href="/" aria-label="Moratech, início"><span>mora<b>tech</b></span></a>`;
+const brand = () => `<a class="brand" href="/" aria-label="Moratech, início"><img class="brand-mark" src="/assets/moratech-logo.png" alt="" width="42" height="42" decoding="async"><span>mora<b>tech</b></span></a>`;
 const faq = items => `<div class="faq-list">${items.map(([q,a])=>`<details><summary>${esc(q)}${icon('plus')}</summary><p>${esc(a)}</p></details>`).join('')}</div>`;
 const card = s => `<a class="solution-card box-effect reveal" href="${url(s.slug)}"><span class="card-symbol">${icon(s.icon)}</span><span class="card-category">${s.label}</span><h3>${s.title.replaceAll('\n','<br>')}</h3><p>${s.short}</p><span class="circle-link" aria-hidden="true">${icon('plus')}</span></a>`;
 const cta = (title='Seu próximo passo começa aqui.',body='Conte o que você precisa. Vamos encontrar a solução juntos.',href=waFor('geral'),label='Conversar no WhatsApp') => `<section class="closing-section"><div class="container reveal"><span class="eyebrow">COMECE UMA NOVA CONEXÃO</span><h2>${title}</h2><p>${body}</p>${button(label,href,'primary',href.startsWith('https://'))}</div></section>`;

@@ -74,3 +74,30 @@ body[data-page="datacaixa-pdv"] .detail-art{background:#f3e5f5}
 
 /* Contain the decorative glow inside the hero instead of the page viewport. */
 .hero{position:relative}
+
+/* The supplied logo stays crisp at the small size used in the navigation. */
+.brand-mark{width:42px;height:42px;flex:none;object-fit:cover;border-radius:9px}
+.site-footer .brand-mark{width:46px;height:46px}
+
+/* Equipment and automation now use full-bleed photography. */
+.equipment-panel.photo-panel,.automation-panel.photo-panel{padding:0;background:#18111d}
+.photo-panel>img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.photo-panel:after{content:'';position:absolute;inset:50% 0 0;background:linear-gradient(transparent,rgba(11,7,15,.67));pointer-events:none}
+.photo-panel .panel-tag{z-index:2;color:#fff}
+
+/* Crop the supplier screenshot to the useful PDV interface, without the white monitor stand. */
+.pdv-preview-screen{position:relative;min-width:0;padding:0;overflow:hidden;background:#15101a}
+.pdv-preview-screen img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:1.5;object-fit:cover;object-position:center 20%;border-radius:0;box-shadow:none;transform:scale(1.08);transform-origin:center 38%}
+.pdv-preview-screen>span{position:absolute;left:18px;bottom:18px;margin:0;padding:8px 11px;border-radius:100px;background:rgba(18,10,23,.86);color:#fff;line-height:1.3}
+
+@media (max-width:760px){
+  .brand-mark{width:38px;height:38px;border-radius:8px}
+  .visual-panel>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .camera-panel img{width:100%;height:100%;object-fit:cover;object-position:58% center;mix-blend-mode:normal}
+  .bento-security img{inset:0;width:100%;height:100%;object-fit:cover;object-position:60% center;mix-blend-mode:normal}
+  .bento-security:after{content:'';position:absolute;inset:40% 0 0;background:linear-gradient(transparent,rgba(255,255,255,.95));pointer-events:none}
+  .bento-security>div,.bento-security .circle-link{z-index:2}
+  .detail-art.has-image img[src*="security-camera"]{object-fit:cover;object-position:58% center;mix-blend-mode:normal}
+  .pdv-preview-screen img{aspect-ratio:1.25;transform:scale(1.23)}
+  .pdv-preview-screen>span{left:12px;bottom:12px;font-size:.65rem}
+}
