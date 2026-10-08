@@ -12,6 +12,10 @@ O conteúdo fica em `content.mjs`, a home em `home.mjs` e os modelos das página
 
 Este site fica na pasta `site` do repositório do GitHub. Na Vercel, defina **Root Directory** como `site`. O arquivo `vercel.json` seleciona o tipo de projeto **Other**, executa `node build.mjs` e publica os arquivos de `dist/`. Depois de alterar o Root Directory de um projeto já criado, inicie um novo deploy.
 
+## HostGator (upload manual)
+
+No Windows, execute `powershell -ExecutionPolicy Bypass -File site/package-hostgator.ps1` na raiz do repositório. O script recompila, verifica e cria `moratech-hostgator.zip`. Extraia o conteúdo desse arquivo diretamente na raiz pública do domínio; `index.html`, `styles.css`, `script.js` e `assets/` devem ficar no mesmo nível. Não envie `build.mjs`, `content.mjs` ou a pasta `dist` inteira como subpasta.
+
 ## Imagens
 
 `dist/assets/fachada-mora.png` é a foto da fachada fornecida pelo usuário. `dist/assets/moratech-logo.png` é a logo enviada pelo usuário, usada na navegação e no rodapé. As imagens abaixo foram geradas para este projeto:
